@@ -17,14 +17,14 @@ rm -rf /etc/storage/17ce
 rm -rf /tmp/17ce
 rm  -rf 17ce*
 cd /tmp
-wget -O 17ce_padavan.sh http://git.oschina.net/mjyhj/K2_17ce/raw/master/17ce_padavan.sh
+wget -O 17ce_padavan.sh https://raw.githubusercontent.com/xunxun1982/K2_17ce/master/17ce_padavan.sh
 chmod +x  /tmp/17ce_padavan.sh
 mkdir /etc/storage/17ce
 cp install_padavan.sh /etc/storage/17ce/install_padavan.sh
 chmod +x  /etc/storage/17ce/install_padavan.sh
 if grep -wq "install_padavan.sh" /etc/storage/post_wan_script.sh; then
-  /tmp/17ce_padavan.sh yiqice@qq.com
+  /tmp/17ce_padavan.sh xunxun1982@gmail.com
 else
   echo "/etc/storage/17ce/install_padavan.sh  yiqice@qq.com">>/etc/storage/post_wan_script.sh
-  /tmp/17ce_padavan.sh yiqice@qq.com
+  /tmp/17ce_padavan.sh xunxun1982@gmail.com
 fi
